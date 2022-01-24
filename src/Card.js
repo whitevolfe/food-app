@@ -9,6 +9,7 @@ import CardHeader from '@mui/material/CardHeader';
 import Avatar from '@mui/material/Avatar';
 import IconButton from '@mui/material/IconButton';
 import ShareIcon from '@mui/icons-material/Share';
+import CardMedia from '@mui/material/CardMedia';
 
 const bull = (
   <Box
@@ -33,23 +34,24 @@ export default function BasicCard() {
             <ShareIcon />
           </IconButton>
         }
-        title="Shrimp and Chorizo Paella"
-        subheader="September 14, 2016"
+        title="burger"
+        subheader="5 hours ago"
+      />
+
+  <CardMedia
+        component="img"
+        height="194"
+        image="/images/burger.jpg"
+        alt="burger"
       />
       <CardContent>
-        <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
-          Word of the Day
-        </Typography>
+        
         <Typography variant="h5" component="div">
-          be{bull}nev{bull}o{bull}lent
+          10$
         </Typography>
-        <Typography sx={{ mb: 1.5 }} color="text.secondary">
-          adjective
-        </Typography>
+        
         <Typography variant="body2">
-          well meaning and kindly.
-          <br />
-          {'"a benevolent smile"'}
+        Assuming it's a really good burger, it's juicy, meaty, greasily satisfying. 
         </Typography>
       </CardContent>
       <CardActions>
